@@ -1,0 +1,20 @@
+
+
+div{
+    text-align: center;
+}
+button{
+    border-radius: 15px;
+    background-color:plum;
+    height: 35px;
+    width: 75px;
+    
+}
+img{
+    border-radius: 15px;
+    height:150px ;
+    width:250px ;
+}
+a:focus{
+    background-color:plum;
+}

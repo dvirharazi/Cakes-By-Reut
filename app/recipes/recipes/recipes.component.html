@@ -1,0 +1,23 @@
+
+
+
+
+   <div class="container">
+    <div class="row">
+            <div class="col-md-12">
+                    <h4 >מתכונים</h4>
+                    <br>
+                    <a [routerLink]="['/recipes' , recipe.id ]"
+                    *ngFor="let recipe of recipes"></a>
+                    <router-outlet></router-outlet>
+                   </div>
+      
+        
+       </div>
+       <div class="row">
+            <div class="col-md-12" >
+                        <app-recipe-list></app-recipe-list>             
+        </div>
+       </div>
+    </div>
+    

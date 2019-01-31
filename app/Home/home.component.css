@@ -1,0 +1,24 @@
+
+h4{
+    color: blueviolet;
+    font-weight: bold;
+}
+img{
+    height: 250px;
+    width: 300px;
+}
+div{
+    text-align: center;
+}
+button{
+    border-radius: 15px;
+    background-color:plum;
+    height: 50px;
+    width: 100px;
+    
+}
+.instagram-img{
+    height: 550px;
+    width:600px;
+}
+

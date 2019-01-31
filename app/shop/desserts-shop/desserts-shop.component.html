@@ -1,0 +1,50 @@
+
+<div class="container">
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+                    <div class="col-md-12">
+                        <h4>רכישה</h4>
+                        <br>
+                    </div>
+                    <div formGroupName="userData">
+                    <div class="row">
+                        <div class="col-md-4">
+                                <div class="form-group">
+                                <label for="firstName">שם פרטי</label>
+                                <input type="text"
+                                id="firstName"
+                                class="form-control"
+                                formControlName="firstName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-md-4">
+                                    <div class="form-group">
+                                    <label for="lastName">שם משפחה</label>
+                                    <input type="text"
+                                    id="lastName"
+                                    class="form-control"
+                                    formControlName="lastName">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-md-4">
+                                    <div class="form-group">
+                                    <label for="email">אימייל</label>
+                                    <input type="email"
+                                    id="email"
+                                    class="form-control"
+                                    formControlName="email">
+                                </div>
+                            </div>
+                        </div>
+                    <button [disabled]="!signUpForm.valid" type="submit">שלח</button>
+                    <button type="button" (click)="onBackToRecipes()">חזרה למתכונים</button>
+                </div>
+    </form>
+        
+</div>
+        

@@ -1,0 +1,21 @@
+
+
+<div class="col-md-4">
+<a 
+style="cursor:pointer;"
+[routerLink]="[index]"
+class="list-group-item clearfix"
+>
+    <div>
+        <h4 class="list-group-item-heading">{{recipe.name}}</h4>
+        <span >
+            <img 
+            [src]="recipe.imgPath"
+             alt="{{recipe.name}}"
+             >
+        </span>
+        <button type="button" (click)="toRecipe(index)">למתכון</button>
+    </div>
+</a>
+</div>
+
